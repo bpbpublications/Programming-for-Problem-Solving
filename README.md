@@ -1,2 +1,2 @@
-# Programming for Problem-Solving
- Programming for Problem-Solving, by BPB Publications
+# Programming for Problem-Solving with C
+ Programming for Problem-Solving with C, by BPB Publications
