@@ -1,0 +1,49 @@
+// Program 19.10 calculates the sum of n numbers entered by the user
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int n, n1, i, *ptr, sum=0;
+    printf("Enter number of elements: ");
+    scanf("%d",&n);
+    ptr = (int*) calloc(n,sizeof(int));
+    if(ptr==NULL)  // if memory cannot be allocated
+    {
+        printf("Error! memory not allocated.");
+        exit(0);
+    }
+    printf("Enter elements: ");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&ptr[i]);
+        sum = sum +ptr[i];
+    }
+    printf("Sum = %d",sum);
+    printf("\nEnter the new size: ");
+    scanf("%d",&n1);
+    //Reallocating the memory
+    ptr = realloc(ptr,n1*sizeof(int));
+    printf("Enter some more elements: ");
+    for(i = 0;i<n1;i++)
+    {
+        scanf("%d",&ptr[i]);
+        sum = sum+ptr[i];
+    }
+    printf("Sum=%d",sum);
+    free(ptr); // deallocating
+    return 0;
+}
+Output:
+Enter the number of elements:4
+Enter elements:1
+2
+3
+4
+Sum=10
+Enter the new size:5
+Enter some more elements:1
+2
+3
+4
+5
+Sum=25

@@ -1,0 +1,20 @@
+// Program 12.4 adds two numbers using the function with argument passing and returning the result to the main function.
+#include<stdio.h>
+int sum(int, int); // Function declaration
+void main()
+{
+    int a,b, d;
+    a=10;
+    b=20;
+    d = sum(a,b);// Function Calling
+    printf("Sum=%d",d);
+}
+int sum(int x, int y) //Function definition
+{
+    int c;
+    c = x+y;
+    return c;
+}
+
+Output:
+Sum=30

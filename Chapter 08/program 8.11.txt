@@ -1,0 +1,19 @@
+//Program 8.11 to check the number is even or odd
+#include<stdio.h>
+int main()
+{
+int a,r;
+printf("Enter any number to check even or odd: ");
+scanf("%d",&a);
+r=(a%2);
+if(r==0)
+printf("The entered number is even: %d",a);
+else
+printf("The entered number is odd");
+return 0;
+}
+
+Output:
+
+Enter any number to check even or odd: 54
+The entered number is even: 54

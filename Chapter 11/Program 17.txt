@@ -1,0 +1,27 @@
+// Program 11.17 Illustrates of isalnum() function
+#include <stdio.h>
+#include <ctype.h>
+void main ()
+{
+   int a = 'd';
+   int b = '2';
+   int c = '$';
+
+   if( isalnum(a) )
+    printf("This is alphanumeric\n");
+   else
+    printf("This is not alphanumeric\n" );
+    if( isalnum(b) )
+    printf("This is alphanumeric\n" );
+    else
+    printf("This is not alphanumeric\n" );
+    if( isalnum(c) )
+    printf("This is alphanumeric\n" );
+    else
+    printf("This is not alphanumeric\n" );
+}
+
+Output:
+This is alphanumeric
+This is alphanumeric
+This is not alphanumeric

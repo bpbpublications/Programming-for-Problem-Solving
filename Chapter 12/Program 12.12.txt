@@ -1,0 +1,10 @@
+// Program 12.12 shows a auto variable
+#include <stdio.h>
+void main()
+{
+    auto int a;
+    printf("%d",a);
+}
+
+Output:
+Any garbage value

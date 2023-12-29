@@ -1,0 +1,36 @@
+// Program 12.21 prints fabonacci series using function.
+#include<stdio.h>
+ int fibonacci();
+void main()
+{
+ fibonacci();
+} 
+ int fibonacci()
+{
+    int t1=0,t2=1,n,i,nxt_term=0,a;
+    printf("Enter the value of n to get fibonacci series: ");
+    scanf("%d",&n);
+    printf("The series up to %d is: ",n);
+    if(n==0)
+      printf("Enter the number greater then zero");
+    else if(n==1)
+    {
+     a=0;
+     printf("%d",a); 
+    }
+    else
+    {
+      for(i=0;i<n;i++)
+       {
+       printf("%d\t",t1);
+       nxt_term=t1+t2;
+       t1=t2;
+       t2=nxt_term;
+       }
+    }
+    return 0;
+}
+Output:
+
+Enter the value of n to get fibonacci series: 10
+The series upto 10 is: 0       1       1       2       3       5       8       13      21      34

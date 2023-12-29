@@ -1,0 +1,25 @@
+// Program 11. 22 concatenates two strings without strcat function
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char A[100], B[100];
+    int i = 0, j = 0;
+    printf("Enter the first string: ");
+    scanf("%s", A);
+    printf("Enter the second string: ");
+    scanf("%s", B);
+    i = strlen(A);
+    while (B[j] != '\0')
+    {
+        A[i] = B[j];
+        i++;
+        j++;
+    }
+    A[i] = '\0';
+    printf("Concatenated string: %s\n", A);
+    return 0;
+}
+Enter the first string: HELLO
+Enter the second string: UIET!
+Concatenated string: HELLOUIET!

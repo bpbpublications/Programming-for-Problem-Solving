@@ -1,0 +1,19 @@
+// Program 12.28 updates an array elements using a function
+
+#include <stdio.h>
+void update(int arr[], int length)
+{
+    arr[0] = 100;
+    arr[1] = 200;
+}
+
+int main()
+{
+    int A[] = {1, 2, 3};
+    update(A,3); //passing the base address and the lenght of array
+    printf("%d %d %d\n", A[0], A[1], A[2]);
+    return 0;
+}
+
+Output: 100 200 3
+

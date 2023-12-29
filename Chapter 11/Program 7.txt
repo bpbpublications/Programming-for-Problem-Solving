@@ -1,0 +1,27 @@
+// Program 11. 7 compares two strings
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+char A[10];
+char B[10];
+int i;
+printf("Enter the 1st string:\n");
+gets(A);
+printf("Enter the 2nd string:\n");
+gets(B);
+i=strcmp(A,B);
+if(i==0)
+    printf("Strings are equal");
+else
+    printf("Strings are not equal\n");
+printf("The difference between the first non-matching character is %d :\n",i);
+}
+
+Output:
+Enter the 1st string:
+hello
+Enter the 2nd string:
+hillo
+Strings are not equal
+The difference between the first non-matching character is -4 :

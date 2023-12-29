@@ -1,0 +1,15 @@
+// Program 14.7 shows the size occupied by the union
+int main()
+{
+    union A 
+ {
+        int x;      // sizeof(int) = 4
+        double z;   // sizeof(double) = 8
+        short int y;// sizeof(short int) = 2
+    };
+    printf("Size of union: %ld", sizeof(union A));
+    return 0;
+}
+
+Output:
+Size of union: 8

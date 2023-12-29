@@ -1,0 +1,25 @@
+// Program 9.15 to find the factorial of given number
+#include<stdio.h>
+int main()
+{
+
+    int fact =1,num;
+    printf("Enter the number: ");
+    scanf("%d",&num);
+    if(num==0)
+        fact= 1;
+    else
+    {
+        for(int i=1;i<=num;i++)
+            fact = fact*i;
+    }
+    printf("Factorial of %d is: %d",num,fact);
+    return 0;
+}
+
+
+Output:
+Enter the number: 5
+Factorial of 5 is: 120
+
+

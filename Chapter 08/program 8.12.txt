@@ -1,0 +1,21 @@
+// Program 8.12 to check greater of two number 
+#include<stdio.h>
+int main()
+{
+int a,b;
+printf("Enter the first number:");
+scanf("%d",&a);
+printf("\nEnter the second number:");
+scanf("%d",&b);
+if(a>b)
+printf("\nThe greater number is:%d",a);
+else
+printf("\nThe greater number is:%d",b);
+return 0;
+}
+
+Output:
+
+Enter the first number:54
+Enter the second number:52
+The greater number is:54

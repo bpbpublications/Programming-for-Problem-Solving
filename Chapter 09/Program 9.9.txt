@@ -1,0 +1,31 @@
+// Program 9.9 to check the greatest among ten given number
+#include <stdio.h>
+int main()
+{
+ int i=1, large= -32768,num;
+ while(i<=10)
+ {
+     printf("Enter the %d number: ",i);
+     scanf("%d",&num);
+     large= num>large?num:large;
+     i++;
+ }
+   printf("The largest of ten numbers entered is: %d",large);
+   return 0;
+  }
+
+
+Output:
+
+Enter the 1 number: 42
+Enter the 2 number: 52
+Enter the 3 number: 62
+Enter the 4 number: 85
+Enter the 5 number: 75
+Enter the 6 number: 95
+Enter the 7 number: 61
+Enter the 8 number: 53
+Enter the 9 number: 94
+Enter the 10 number: 81
+The largest of ten numbers entered is: 95
+

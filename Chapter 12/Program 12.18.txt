@@ -1,0 +1,22 @@
+// Program 12.18 of area of circle.
+#include<stdio.h>
+float area(void);
+int main()
+{
+  float a;
+  a=area();
+  printf("Area of the circle =%f",a);
+  return 0;
+}
+float area()
+{
+  float radius;
+  printf("Enter the radius of the circle: ");
+  scanf("%f",&radius);
+  return (3.14*radius*radius);
+}
+
+Output:
+
+Enter the radius of the circle: 5
+Area of the circle =78.500000

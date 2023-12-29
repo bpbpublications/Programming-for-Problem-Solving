@@ -1,0 +1,19 @@
+// Program 11.13 copies three characters of one string into another string
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+char A[10];
+char B[10];
+int i;
+printf("Enter the 1st string:\n");
+gets(A);
+strncpy(B,A,3); // Copy first 3 characters of A in B
+printf("The first three characters of B are:\n");
+puts(B);
+}
+Output:
+Enter the 1st string:
+HELLO
+The first three characters of B are:
+HEL

@@ -1,0 +1,32 @@
+//Program 14.4  Enters the name and roll number of ten students using an array of structure
+#include<stdio.h>
+struct student
+{
+int roll;
+char name[10];
+}s[10];		// array of objects
+void main()
+{
+int i;
+printf("Enter the records of 10 students");
+for(i=0;i<10;i++)
+{
+printf("\nEnter Roll Number:");
+scanf("%d",&s[i].roll);
+printf("Enter Name:");
+scanf("%s",&s[i].name);
+}
+printf("\nStudent Information List:");
+for(i=0;i<10;i++)
+{
+printf("\nRoll Number:%d, Name:%s",s[i].roll,s[i].name);
+}
+}
+
+Output:
+Enter the records of 10 students
+Enter Roll Number:1
+Enter Name:Kamal
+
+similarly, ask for nine other records and ptint them
+

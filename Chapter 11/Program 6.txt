@@ -1,0 +1,24 @@
+// Program 11.6 to concatenate two strings
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+char A[20];
+char B[10];
+int i;
+printf("Enter the 1st string:\n");
+gets(A);
+printf("Enter the 2nd string:\n");
+gets(B);
+strcat(A,B); // Concatenates B in A
+printf("The concatenated string is :\n");
+puts(A);
+}
+
+Output:
+Enter the 1st string:
+Kamal
+Enter the 2nd string:
+deep
+The concatenated string is:
+Kamaldeep

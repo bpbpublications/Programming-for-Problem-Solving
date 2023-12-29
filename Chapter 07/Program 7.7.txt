@@ -1,0 +1,11 @@
+// Program 7.7 to illustrate bitwise OR operator
+#include <stdio.h>
+void main()
+{
+    int a=10,b=20;
+    printf("The value of a | b = %d\n",a|b);
+}
+
+Output:
+
+The value of a | b = 30

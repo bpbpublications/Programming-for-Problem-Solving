@@ -1,0 +1,24 @@
+// Program 12.9 prints an array using passing an array with explicit size
+#include <stdio.h>
+void print(int a[] , int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        printf("%d ", a[i]);
+    }
+    printf("\n");
+}
+
+int main()
+{
+    int A[] = {1, 2, 3, 4, 5};
+    int size = sizeof(A) / sizeof(A[0]);
+    print(A, size);
+    return 0;
+} 
+
+Output:
+
+1 2 3 4 5
+
+

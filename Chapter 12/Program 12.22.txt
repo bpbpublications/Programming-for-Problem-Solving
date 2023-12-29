@@ -1,0 +1,45 @@
+// Program 12.22 prints the largest among ten numbers by passing array in function.
+#include<stdio.h>
+int large(int arr[]);
+int main()
+{
+    int arr[10],i,largest;
+    for(i=0;i<10;i++)
+    {
+        printf("Enter the %d value in array: ",i+1);
+        scanf("%d",&arr[i]);
+    }
+    largest=large(arr);
+    printf("The largest number in the array is: %d",largest);
+}
+int large(int arr[])
+{
+    int i,j,temp;
+    for (i=0;i<10-1;i++)
+  {
+    for (j=0;j<10-i-1;j++)
+    {
+      if (arr[j] > arr[j+1]) 
+      {
+        temp=arr[j];
+        arr[j]=arr[j+1];
+        arr[j+1]=temp;
+      }
+    }
+  }
+  return arr[10-1];
+}
+
+Output:
+
+Enter the 1 value in array: 10
+Enter the 2 value in array: 20
+Enter the 3 value in array: 30
+Enter the 4 value in array: 440
+Enter the 5 value in array: 50
+Enter the 6 value in array: 60
+Enter the 7 value in array: 0
+Enter the 8 value in array: 80
+Enter the 9 value in array: 90
+Enter the 10 value in array: 100
+The largest number in the array is: 440

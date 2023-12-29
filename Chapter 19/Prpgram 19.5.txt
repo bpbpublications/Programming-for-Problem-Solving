@@ -1,0 +1,13 @@
+// Program 19.5 creates a file 'abc.c' and enters the text into a file using fputs()
+#include <stdio.h>
+main()
+{
+   FILE *fp;
+   fp = fopen("abc.c", "w+");
+   fputs("HELLO", fp);
+   fclose(fp);
+}
+
+
+
+

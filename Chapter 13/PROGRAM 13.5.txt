@@ -1,0 +1,95 @@
+//Program 13.5 show the merge sorting
+#include <stdio.h>
+#include <stdlib.h>
+// Merges two sub-arrays of A[] i.e.A[l..m] and A[m+1..r]
+void merge(int A[],int l,int m,int r)
+{
+    int i, j, k;
+    int a1 = m - l + 1;
+    int a2 = r - m;
+
+    // Create temp array
+    int L[a1], R[a2];
+
+    // Copy data to temp array
+    // L[] and R[]
+    for (i = 0; i < a1; i++)
+        L[i] = A[l + i];
+    for (j = 0; j < a2; j++)
+        R[j] = A[m + 1 + j];
+
+    // Merge the temp array back into A[l..r]
+    i = 0;  // Initial index of first sub array
+    j = 0;  // Initial index of second sub array
+    k = l;  // Initial index of merged sub array
+
+while (i < a1 && j < a2)
+    {
+        if (L[i] <= R[j])
+        {
+            A[k] = L[i];
+            i++;
+        }
+        else
+        {
+            A[k] = R[j];
+            j++;
+        }
+        k++;
+    }
+
+    // Copy the remaining elements L[]
+    while (i < a1)
+        {
+        A[k] = L[i];
+        i++;
+        k++;
+        }
+
+    // Copy the remaining elements of R[]
+    while (j < a2)
+    {
+        A[k] = R[j];
+        j++;
+        k++;
+    }
+}
+
+// l is for left index and r is right index of the sub-array of array
+void mergesort(int A[],int l,int r)
+{
+    if (l < r)
+    {
+        int m = l + (r - l) / 2;
+
+        mergesort(A, l, m);     // for first half
+        mergesort(A, m + 1, r); // for second half
+
+        merge(A, l, m, r);
+    }
+}
+
+// Function to print an array
+void print(int A[], int size)
+{
+    int i;
+    for (i = 0; i < size; i++)
+        printf("%d ", A[i]);
+    printf("\n");
+}
+
+int main()
+{
+    int A[] = {20,10,50,60,30,40,80,70};
+    int size = sizeof(A)/sizeof(A[0]);
+    printf("Unsorted array: ");
+    print(A, size);
+    mergesort(A, 0, size - 1);
+    printf("Sorted array: ");
+    print(A, size);
+    return 0;
+}
+
+Output:
+Unsorted array: 20 10 50 60 30 40 80 70
+Sorted array: 10 20 30 40 50 60 70 80

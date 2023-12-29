@@ -1,0 +1,17 @@
+// Program 20.2 calculates the sum of two numbers using a formula
+#include<stdio.h>
+void main()
+{
+ double sum, n,i;
+ printf("Enter the value of n:");
+ scanf("%lf",&n);
+ sum=0;
+ sum=(n*(n-1))/2;;
+ printf("The sum is:%lf",sum);
+}
+
+Output:
+Enter the value of n: 10000000000
+The sum is: 49999999994999996000.000000
+
+

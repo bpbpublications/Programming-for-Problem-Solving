@@ -1,0 +1,26 @@
+// Program 12.8 prints an array using passing an array as a pointer
+#include <stdio.h>
+void a(int *p, int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        printf("%d ", p[i]);
+    }
+    printf("\n");
+}
+
+int main()
+{
+    int A[] = {1, 2, 3, 4, 5};
+    int size = sizeof(A) / sizeof(A[0]);
+    a(A, size);
+    return 0;
+}
+
+Output:
+1 2 3 4 5
+
+
+
+
+

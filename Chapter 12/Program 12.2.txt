@@ -1,0 +1,20 @@
+// Program 12.2 adds two numbers using functions when no argument passing
+#include<stdio.h>
+void sum(void); 	// Function declaration or prototype
+void main()
+{
+   sum();		// Function calling
+}
+void sum(void) 		//Function definition
+{
+    int a,b,c;
+    a=10;
+    b=20;
+    c=a+b;
+    printf("Sum=%d",c);
+}
+
+Output:
+Sum=30
+
+

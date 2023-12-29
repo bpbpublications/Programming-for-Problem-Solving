@@ -1,0 +1,10 @@
+// Program 11.2 Elaborates the second method of declaration and initialization of string
+#include<stdio.h>
+void main()
+{
+    char A[] = "KAMAL";
+    printf("%s", A);
+}
+
+Output:
+KAMAL

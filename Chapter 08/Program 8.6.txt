@@ -1,0 +1,41 @@
+//Program 8.6 shows the use of a switch
+#include <stdio.h>
+void main( )
+{
+    int a;
+    printf("Enter a number:\n");
+    scanf("%d", &a);
+    switch(a)
+    {
+    case 1:
+        printf("The day is Sunday");
+        break;
+    case 2:
+        printf("The day is Monday");
+        break;
+    case 3:
+        printf("The day is Tuesday");
+        break;
+    case 4:
+        printf("The day is Wednesday");
+        break;
+    case 5:
+        printf("The day is Thursday");
+        break;
+    case 6:
+        printf("The day is Friday");
+        break;
+    case 7:
+        printf("The day is Saturday");
+        break;
+    default:
+        printf("INVALID DAY");
+        break;
+    }
+}
+
+Output:
+
+Enter a number:
+5
+The day is Thursday

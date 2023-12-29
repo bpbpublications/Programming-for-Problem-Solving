@@ -1,0 +1,19 @@
+// Program 7.1 illustrates arithmetic operators
+#include <stdio.h>
+void main()
+{
+    int a = 7,b = 2;
+    printf("The sum of a and b = %d \n", a+b);
+    printf("The difference between a and b = %d \n", a-b);
+    printf("The product of a and b = %d \n", a*b);
+    printf("The division of a and b  = %d \n", a/b);
+    printf("a mode b = %d \n", a%b);
+}
+
+Output:
+
+The sum of a and b = 9
+The difference between a and b = 5
+The product of a and b = 14
+The division of a and b  = 3
+a mode b = 1

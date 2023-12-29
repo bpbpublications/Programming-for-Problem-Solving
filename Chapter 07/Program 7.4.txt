@@ -1,0 +1,25 @@
+// Program 7.4 to illustrate relational operators
+#include <stdio.h>
+main()
+{
+    int a = 7;
+    int b = 2;
+    if( a == b )
+    		printf("a and b are equal");
+    if( a != b )
+    		printf("\n a and b are not equal");
+    if( a > b )
+    		printf("\n a is greater than b");
+    if( a < b )
+    		printf("\n a is less than b");
+    if( a <= b )
+    		printf("\n a is less or equal to b");
+    if( a >= b )
+    		printf("\n a is greater than or equal to  b", a,b);
+}
+
+Output:
+
+ a and b are not equal
+ a is greater than b
+ a is greater than or equal to  b

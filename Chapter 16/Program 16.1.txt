@@ -1,0 +1,19 @@
+// Program 16.1 prints the variable, and its address using pointer
+#include <stdio.h>
+void main()
+{
+    int a; 	// Variable declaration
+    int *p; 	// Pointer declaration
+    a = 10;	// Assigning value
+    p = &a;	// Assigning address of a to p
+   printf("Assessing the value of a using pointer = %d\n", *p);
+   printf("Address of a = %d\n", &a);
+   printf("Value of a = %d\n", a);
+   printf("The value at address = %d",*(&a));
+}
+
+Output:
+Assessing the value of a using pointer = 10
+Address of a = 6422036
+Value of a = 10
+The value at address = 10

@@ -1,0 +1,11 @@
+// Program 12.13 shows a static variable
+#include <stdio.h>
+void main()
+{
+    static int a;
+    printf("%d",a);
+}
+
+Output:
+0
+

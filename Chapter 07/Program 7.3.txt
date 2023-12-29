@@ -1,0 +1,21 @@
+// Program 7.3 to illustrate relational operators
+#include <stdio.h>
+void main()
+{
+    int a = 7, b = 2;
+    printf("%The a == b returns %d\n", a == b);
+    printf("a != b returns %d\n", a != b);
+    printf("a > b returns %d\n", a > b);
+    printf("a < b returns %d\n", a < b);
+    printf("a < b returns %d\n", a >= b);
+    printf("a <= b returns %d\n", a <= b);
+}
+
+Output:
+
+The a == b returns 0
+a != b returns 1
+a > b returns 1
+a < b returns 0
+a < b returns 1
+a <= b returns 0

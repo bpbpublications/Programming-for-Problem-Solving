@@ -1,0 +1,25 @@
+// Program 8.4 illustrates nested if-else
+#include <stdio.h>
+
+int main()
+{
+    int num1 = 10;
+    int num2 = 20;
+    if(num1 == 10)
+    {
+        printf("num1 is equal to 10\n");
+        if(num2 == 20)
+            printf("num2 is equal to 20\n");
+        else
+            printf("num2 is not equal to 20\n");
+    }
+    else
+        printf("num1 is not equal to 10\n");
+return 0;
+}
+
+Output:
+
+num1 is equal to 10
+num2 is equal to 20
+

@@ -1,0 +1,37 @@
+/// Program 14.11 shows the concept of passing structure using pass by value and pass by reference
+#include <stdio.h>
+struct Point
+{
+  int x;
+  int y;
+};
+void fun1(struct Point p) // Pass-by-value
+{
+  printf("Cordinates in fun1: (%d, %d)\n", p.x, p.y);
+  p.x = 100; // Modifying the local copy doesn't affect the original structure
+}
+void fun2(struct Point* p) // Pass-by-reference (using pointers)
+{
+  printf("Cordinates in fun2: (%d, %d)\n", p->x, p->y);
+  p->x = 100; // Modifying the pointed structure affects the original structure
+}
+int main()
+{
+  struct Point P = {10, 20};
+  fun1(P);
+  printf("Modified values after pass-by-value: (%d, %d)\n", P.x, P.y);
+
+  fun2(&P);
+  printf("Modified values after pass-by-reference: (%d, %d)\n", P.x, P.y);
+
+  return 0;
+}
+
+
+
+Output:
+Cordinates in fun1: (10, 20)
+Modified values after call-by-value: (10, 20)
+Cordinates in fun2: (10, 20)
+Modified values after call-by-reference: (100, 20)
+

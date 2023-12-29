@@ -1,0 +1,85 @@
+// Program 12.23 merges two arryas using function.
+#include<stdio.h>
+void read_arr1(int arr1[],int n);
+void read_arr2(int arr2[],int m);
+int merged_arr3(int arr3[],int n,int m,int arr1[],int arr2[]);
+int main()
+{
+    int n,m,arr3[4],c,i,arr1[100],arr2[100];
+    printf("Enter the size of first array: ");
+    scanf("%d",&n);
+    read_arr1(arr1,n);
+    printf("\nEnter the size of second array: ");
+    scanf("%d",&m);
+    read_arr2(arr2,m);
+    merged_arr3(arr3,n,m,arr1,arr2);
+    return 0;
+}
+void read_arr1(int arr1[],int n)
+{
+    int i;
+    for(i=0;i<n;i++)
+    {
+        printf("Enter the %d value in 1st array: ",i+1);
+        scanf("%d",&arr1[i]);
+    }
+}
+void read_arr2(int arr2[],int m)
+{
+   int i;
+    for(i=0;i<m;i++)
+    {
+        printf("Enter the %d value in 2nd array: ",i+1);
+        scanf("%d",&arr2[i]);
+    } 
+}
+int merged_arr3(int arr3[],int n,int m,int arr1[],int arr2[])
+{
+    int i,j=0,c=n+m;
+    for(i=0;i<n;i++)
+    {
+        arr3[i]=arr1[i];
+        j++;
+    }
+    for(i=0;i<m;i++)
+    {
+        arr3[j]=arr2[i];
+        j++;
+    } 
+    printf("The meged array is:: ");
+    for(i=0;i<c;i++)
+    {
+    printf("\n");
+    printf("%d",arr3[i]);  
+    }
+}
+
+
+Output:
+
+Enter the size of first array: 5
+Enter the 1 value in 1st array: 1
+Enter the 2 value in 1st array: 2
+Enter the 3 value in 1st array: 3
+Enter the 4 value in 1st array: 4
+Enter the 5 value in 1st array: 5
+
+Enter the size of second array: 5
+Enter the 1 value in 2nd array: 6
+Enter the 2 value in 2nd array: 7
+Enter the 3 value in 2nd array: 8
+Enter the 4 value in 2nd array: 9
+Enter the 5 value in 2nd array: 10
+The meged array is:: 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+        
+    

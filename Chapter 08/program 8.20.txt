@@ -1,0 +1,27 @@
+// Program 8.20 to check whether a person can vote or not
+#include<stdio.h>
+ void main()
+ {
+    int age;
+    char ch;
+    printf("Enter 'Y' if indian otherwise 'N': ");
+    scanf("%c",&ch);
+    printf("Enter your age: ");
+    scanf("%d",&age);
+    if (age>=18 && ch=='Y')
+    {
+        printf("You are eligible for voting");
+    }
+    else
+    {
+       printf("You are not eligible for voting"); 
+    }
+
+ }
+
+
+ Output:
+
+Enter 'Y' if indian otherwise 'N': Y
+Enter your age: 24
+You are eligible for voting

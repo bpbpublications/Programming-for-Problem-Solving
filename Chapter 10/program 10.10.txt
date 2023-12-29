@@ -1,0 +1,33 @@
+// Program to 10.10 find the largest among the ten numbers.
+#include<stdio.h>
+int main()
+{
+    int n,a[10];
+    for(int i=0;i<10;i++)
+    {
+        printf("Enter the number at %d position : ",i);
+        scanf("%d",&a[i]);
+    }
+    int j,large=0;
+    for(j=0;j<10;j++)
+    {
+       if(a[j]>large)
+       large=a[j];
+    }
+    printf("The largest among the given inputs is: %d",large);
+    return 0;
+}
+
+//Output:
+
+Enter the number at 0 position : 10
+Enter the number at 1 position : 52
+Enter the number at 2 position : 63
+Enter the number at 3 position : 84
+Enter the number at 4 position : 95
+Enter the number at 5 position : 62
+Enter the number at 6 position : 75
+Enter the number at 7 position : 62
+Enter the number at 8 position : 30
+Enter the number at 9 position : 75
+The largest among the given inputs is: 95

@@ -1,0 +1,41 @@
+// Program 16.2 elaborates different operations on the variable using a pointer
+#include <stdio.h>
+void main()
+{
+    int a,b,c = 0;
+    int *p , *p1, *p2 ;
+    a = 10;
+    b = 20;
+    c = 30;
+    p = &a;
+    p1 = &b;
+    p2 = &c;
+printf("Accessing the value of  a using pointer = %d\n",*p);
+printf("Address of a = %d\n",&a);
+printf("Address at p = %d\n",p);
+printf("Address of pointer p = %d\n", &p);
+printf("Increment in variable a using pointer = %d\n",++(*p));
+printf("Decrement in variable a using pointer = %d\n",--(*p));
+printf("Adding integers using pointer = %d\n", *p1 + *p2);
+printf("subtracting integers using pointer = %d\n", *p2 - *p1);
+printf("Multiplying integers using pointer = %d\n", *p2 * *p1);
+printf("Dividing integers using pointer = %d\n", *p2 / *p1);
+   if (*p2 > *p1)
+        printf("a is greater than b");
+    else
+        printf("a is lesser than b");
+} 
+
+
+Output:
+Accessing the value of  a using pointer = 10
+Address of a = 6422028
+Address at p = 6422028
+Address of pointer p = 6422008
+Increment in variable a using pointer = 11
+Decrement in variable a using pointer = 10
+Adding integers using pointer = 50
+subtracting integers using pointer = = 10
+Multiplying integers using pointer = = 600
+Dividing integers using pointer = = 1
+a is greater than b

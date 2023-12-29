@@ -1,0 +1,21 @@
+// Program 11.16 counts the number of alphabet and digits in a string
+#include <stdio.h>
+#include <ctype.h>
+int main()
+{
+     char a[]= "Kamaldeep123";
+     int alpha = 0, digit = 0;
+     for (int i = 0; a[i] != '\0'; i++)
+        {
+        if (isalpha(a[i]))
+            alpha++;
+        if (isdigit(a[i]))
+            digit++;
+        }
+    printf("The number of alphabets is:%d",alpha);
+    printf("\nThe number of digits are :%d",digit);
+}
+
+Output:
+The number of alphabets is: 9:
+The number of digits is: 3

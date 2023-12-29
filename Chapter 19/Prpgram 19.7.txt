@@ -1,0 +1,12 @@
+// Program 19.7 deletes a file 'abc.txt'. 
+#include<stdio.h>
+void main()
+{
+   int d = remove("abc.c");
+   if (d==0)
+      printf("The file is deleted successfully");
+   else
+      printf("The file is not deleted");
+}
+
+

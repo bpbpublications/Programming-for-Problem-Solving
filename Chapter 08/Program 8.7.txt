@@ -1,0 +1,35 @@
+//Program 8.7 shows the fall-through effect in a switch
+#include <stdio.h>
+void main()
+{
+    int num;
+    printf("Enter a number:\n");
+    scanf("%d", &num);
+    switch(num)
+    {
+    case 1:
+        printf("The no. is 1\n");
+    case 2:
+        printf("The no. is 2\n");
+    case 3:
+        printf("The no. is 3\n");
+    case 4:
+        printf("The no. is 4\n");
+    case 5:
+        printf("The no. is 5\n");
+    default:
+        printf("The no. is not matched\n");
+    }
+}
+
+
+Output:
+Enter a number:
+1
+The no. is 1
+The no. is 2
+The no. is 3
+The no. is 4
+The no. is 5
+The no. is not matched
+

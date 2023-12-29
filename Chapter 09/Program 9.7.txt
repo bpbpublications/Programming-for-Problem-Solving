@@ -1,0 +1,21 @@
+//Program 9.7 for breaking the infinite loop
+#include <stdio.h>
+int main()
+{
+   int count = 0;
+   while (1)
+   {
+      printf("Count = %d\n", count);
+      count++;
+      if(count>1000)
+      	break;
+   }
+   return 0;
+}
+
+
+Output:
+
+The above will print the value of the count from 0 to 1000
+
+

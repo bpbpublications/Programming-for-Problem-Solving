@@ -1,0 +1,37 @@
+// Program 12.29 increments the all array elements by one using function
+#include <stdio.h>
+void inc(int *p, int size);
+int main()
+{
+    int A[] = {1, 2, 3, 4, 5};
+    int size = sizeof(A) / sizeof(A[0]);
+    printf("Before incrementing: ");
+    for (int i = 0; i < size; i++)
+    {
+        printf("%d ", A[i]);
+    }
+    printf("\n");
+    inc(A, size); //passing the array and its size
+    printf("After incrementing: ");
+    for (int i = 0; i < size; i++)
+    {
+        printf("%d ", A[i]);
+    }
+    printf("\n");
+    return 0;
+}
+
+void inc(int *p, int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        p[i]++;
+    }
+}
+
+Output:
+
+Before incrementing: 1 2 3 4 5
+After incrementing: 2 3 4 5 6
+
+

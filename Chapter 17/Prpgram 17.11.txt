@@ -1,0 +1,18 @@
+//Program 17.11 accepts and prints string using scanf() and printf()
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+char A[10];
+printf("Enter a string:\n");
+scanf("%s",A);
+printf("The string is:\n");
+printf("%s",A);;
+}
+
+Output:
+Output:
+Enter a string:
+Kamal Deep
+The string is:
+Kamal

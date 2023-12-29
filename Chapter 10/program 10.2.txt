@@ -1,0 +1,20 @@
+// Program 10.2 to enter and display the elements in the array.
+#include<stdio.h>
+int main()
+{
+int i=0;
+int num [5]={30,40,50,60,80};
+printf("%d\n",num[0]);
+printf("%d\n",num[1]);
+printf("%d\n",num[2]);
+printf("%d\n",num[3]);
+printf("%d\n",num[4]);
+return 0;
+}
+
+Output:
+30
+40
+50
+60
+80

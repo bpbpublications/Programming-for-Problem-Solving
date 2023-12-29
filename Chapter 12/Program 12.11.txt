@@ -1,0 +1,40 @@
+// Program 12.11 passes a two-dimensional array in a function
+#include <stdio.h>
+void display(int A[][2]);
+int main()
+{
+    int A[2][2],i,j;
+    printf("Enter four elements:\n");
+    for (i = 0; i < 2; i++)
+    {
+        for (j = 0; j < 2; j++)
+        {
+            scanf("%d", &A[i][j]);
+        }
+    }
+    display(A); 		// passing a 2D array A in function sum
+    return 0;
+}
+void display(int A[][2])
+{
+    int i,j;
+    printf("Displaying\n");
+    for (i = 0; i < 2; i++)
+    {
+        for (j = 0; j < 2; j++)
+        {
+           printf("%d\t", A[i][j]);
+        }
+         printf("\n");
+    }
+}
+
+Output:
+Enter four elements:
+1
+2
+3
+4
+Displaying
+1	2
+2	4

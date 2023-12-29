@@ -1,0 +1,19 @@
+//Program 17.1 illustrates printf() with different format specifiers and formatting options
+#include <stdio.h>
+int main() 
+{
+    int num = 10;
+    float pi = 3.14159;
+    char letter = 'A';
+    char name[] = "John";
+    printf("Number: %d\n", num);        // Output: Number: 10
+    printf("Pi: %.5f\n", pi);           // Output: Pi: 3. 14159
+    printf("Letter: %c\n", letter);     // Output: Letter: A
+    printf("Name: %s\n", name);         // Output: Name: John
+    return 0;
+}
+Output:
+Number: 10
+Pi: 3.14159
+Letter: A
+Name: John

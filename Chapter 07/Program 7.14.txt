@@ -1,0 +1,12 @@
+// Program 7.14 for conditional operator
+#include <stdio.h>
+void main()
+{
+    int a=5, b=10, c=15, x;
+    x = (a < b)? b: c;	// conditional operator
+    printf("The value of x=%d",x);
+}
+
+Output:
+
+The value of x=10

@@ -1,0 +1,17 @@
+// Program 10.11 converts the string into lowercase
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+char A[10];
+printf("Enter the string in A:\n");
+gets(A);
+strlwr(A);
+printf("The lower case string is:\n");
+puts(A);
+}
+Output:
+Enter the string in A:
+HELLO
+The lowercase string is:
+Hello

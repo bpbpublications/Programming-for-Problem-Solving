@@ -1,0 +1,14 @@
+// Program 17.4 demonstrates the printf() to print the output with the desired number of spaces for float values
+#include<stdio.h>
+int main()
+{
+float   a=8.543;
+printf("%f\n", a);
+printf("%10.2f\n",a); //right justified
+printf("%-10.2f",a); //left justified
+return 0;
+}
+Output:
+8.543000
+      8.54
+8.54

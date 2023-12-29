@@ -1,0 +1,21 @@
+// Program 18.5 illustrates the use of #undef directive
+#include <stdio.h>
+#define PI 3.14159
+int main()
+{
+    //code that uses PI
+    double radius = 5.0;
+    double circumference= 2*PI*radius;
+    printf("The circumference of a circle=%f\n",circumference);
+
+    #undef PI
+    // PI macro is now undefined
+    //code that no longer uses PI
+    //double area = PI*radius*radius; the statement will not work here
+    //printf("The area of a square=%.2f.\n",area);
+    return 0;
+}
+
+Output:
+The circumference of a circle=31.42
+

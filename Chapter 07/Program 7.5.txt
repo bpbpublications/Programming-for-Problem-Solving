@@ -1,0 +1,27 @@
+// Program 7.5 to illustrate logical operators
+#include <stdio.h>
+void main()
+{
+  int k=0, a,b,c;
+  printf("Enter three numbers:\n");
+  scanf("%d%d%d",&a,&b,&c);
+  k=((c>a) && (c>b));
+  printf("k=%d\n", k);
+  k=((c>a) || (c>b));
+  printf("k=%d\n",k);
+  k=!a;
+  printf("k=%d\n",k);
+  k=!b;
+  printf("k=%d\n",k);
+}
+
+Output:
+
+Enter three numbers:
+10
+15
+20
+k=1
+k=1
+k=0
+k=0

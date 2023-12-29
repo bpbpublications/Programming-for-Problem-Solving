@@ -1,0 +1,20 @@
+// Program 11.8 Copies one string into another
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+char A[10];
+char B[10];
+int i;
+printf("Enter the string in A:\n");
+gets(A);
+strcpy(B,A); // A is copied in B
+printf("The string B is:\n");
+puts(B);
+}
+
+Output:
+Enter the string in A:
+Kamaldeep
+The string B is:
+Kamaldeep

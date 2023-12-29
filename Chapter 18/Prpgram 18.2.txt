@@ -1,0 +1,15 @@
+// Program 18.2 passes the variables to macro
+#include<stdio.h>
+#define AREA(x) (3.141592*x*x)
+void main()
+{
+float r, a;
+printf("Enter the value of radius:");
+scanf("%f",&r);
+a=AREA(r);
+printf("The area of a circle is:%f", a);
+}
+
+Output:
+Enter the value of radius: 3
+The area of a circle is: 28.274328

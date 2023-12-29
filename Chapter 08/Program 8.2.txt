@@ -1,0 +1,19 @@
+//Program 8.2 illustration of if statement
+#include <stdio.h>
+void main()
+{
+    if(5)
+            printf("SUNDAY\n");
+    if(1 + 2)
+            printf("MONDAY\n");
+    if(3.5)
+            printf("WEDNESDAY\n");
+    if(0)
+            printf("NO OUTPUT");
+}
+
+Output:
+
+SUNDAY
+MONDAY
+WEDNESDAY

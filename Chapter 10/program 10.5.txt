@@ -1,0 +1,17 @@
+//Program 10.5 to print the element of a 2D array
+#include<stdio.h>
+ int main()
+{
+   int a[2][2] = {{10,20},
+   {30,40}};
+   for (i=0;i<2;i++)
+   {
+      for (j=0;j<2;j++)
+   printf("Value of array [%d][%d] : %d\n",i,j,arr[i][j]); 
+   }
+}
+Value of array [0][0] is 10
+Value of array [0][1] is 15
+Value of array [1][0] is 20
+Value of array [1][1] is 25
+

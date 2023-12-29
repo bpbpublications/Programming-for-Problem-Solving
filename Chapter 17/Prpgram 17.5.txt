@@ -1,0 +1,14 @@
+// Program 17. 5 enters and prints a character using getch() and putch()
+#include <stdio.h>
+#include <conio.h> // For Windows systems
+int main() 
+{
+    char ch;
+    printf("Press any key to continue...");
+    ch = getch();
+    printf("\nYou pressed: %c\n", ch);
+    return 0;
+}
+Output:
+Press any key to continue...
+You pressed: A

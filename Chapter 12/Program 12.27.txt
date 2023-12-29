@@ -1,0 +1,32 @@
+// Program 12.27 to convert octal into decimal using function.
+#include<stdio.h>
+#include<math.h>
+int octal_to_deci(int octal);
+
+int main()
+{
+    int octal,c;
+    printf("Enter any octal number: ");
+    scanf("%d",&octal);
+    c=octal_to_deci(octal);
+    printf("The decimal equivalent is: %d",c);
+}
+
+int octal_to_deci(int octal)
+{
+    int i=0,decimal=0,a=0,b=0;
+    while(octal!=0)
+    {
+        a=octal%10;
+        b=pow(8,i);
+        decimal=decimal+(a*b);
+        octal=octal/10;
+        i++;
+    }
+    return decimal;
+}
+
+Output:
+
+Enter any octal number: 22
+The decimal equivalent is: 18

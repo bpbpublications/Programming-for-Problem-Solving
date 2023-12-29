@@ -1,0 +1,32 @@
+// Program 14.10 accepts the date of birth using nested structure
+#include <stdio.h>
+struct Date {
+    int day;
+    int month;
+    int year;
+};
+struct Person 
+{
+    char name[50];
+    struct Date dob;
+};
+int main() 
+{
+    struct Person person;
+    printf("Enter name: ");
+    scanf("%s", person.name);
+    printf("Enter date of birth (DD MM YYYY):");
+    scanf("%d%d%d",&person.dob.day,&person.dob.month, &person.dob.year);
+    printf("\nPersonal Details:\n");
+    printf("Name: %s\n", person.name);
+    printf("Date of Birth: %02d-%02d-%04d\n", person.dob.day, person.dob.month, person.dob.year);
+    return 0;
+}
+
+Output:
+Enter name: KAMALDEEP
+Enter date of birth (DD MM YYYY):05 07 1987
+
+Personal Details:
+Name: KAMALDEEP
+Date of Birth: 5-7-1987

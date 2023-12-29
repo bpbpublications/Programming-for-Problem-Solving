@@ -1,0 +1,18 @@
+// Program 9.6 shows the implementation of the infinite loop
+#include <stdio.h>
+int main()
+{
+   int count = 0;
+   while (1)
+   {
+      printf("Count = %d\n", count);
+      count++;
+   }
+   return 0;
+}
+
+Output:
+
+Infinite counting from zero
+
+

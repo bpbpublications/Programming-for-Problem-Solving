@@ -1,0 +1,10 @@
+// Program 12.14 shows a register variable
+#include <stdio.h>
+void main()
+{
+    register int a;
+    printf("%d",a);
+}
+
+Output:
+Any garbage value

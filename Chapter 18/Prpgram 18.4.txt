@@ -1,0 +1,16 @@
+// Program 18.4 illustrates the use of #if and #endif
+#include<stdio.h>
+#define NUM 1
+void main()
+{
+#if NUM < 1
+    printf( "Hello 1!\n" );
+#elif NUM < 2
+   printf( "Hello 2!\n" );
+#else
+   printf( "Hello 3!\n" );
+#endif
+}
+
+Output:
+Hello 2!

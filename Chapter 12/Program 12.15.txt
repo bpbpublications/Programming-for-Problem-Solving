@@ -1,0 +1,16 @@
+// Program 12.15 shows an extern variable
+//FILE1.C
+#include <stdio.h>
+#include"FILE2.c"
+extern int a;
+int main()
+{
+    printf("Value of an in first file = %d",a);
+    return 0;
+}
+
+Output:
+Value of an in first file = 1020
+
+//FILE2.C
+int a = 1020;

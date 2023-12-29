@@ -1,0 +1,22 @@
+// Program 7.2 for illustration increment and decrement operators
+#include <stdio.h>
+int main()
+{
+    int a = 7, b = 8, c = 9, d = 10;
+    printf("++a gives = %d \n", ++a);
+    printf("c++ gives = %d \n", c++);
+    printf("--b gives = %d \n", --b);
+    printf("d-- gives = %d \n", d--);
+    printf("c gives = %d \n", c);
+    printf("d gives = %d \n", d);
+    return 0;
+}
+
+Output:
+
+++a gives = 8
+c++ gives = 9
+--b gives = 7
+d-- gives = 10
+c gives = 10
+d gives = 9

@@ -1,0 +1,21 @@
+// program 13.2 finds the factorial of a number using recursion
+#include <stdio.h>
+int factorial (int);
+int main()
+{
+    int n,a;
+    printf("Enter the number n:");
+    scanf("%d",&n);
+    a = factorial(n);
+    printf("The factorial of n = %d",a);
+}
+int factorial(int n)
+{
+    if (n==0)	                  // base case
+        return 1;
+    else
+        return n*factorial(n-1);  // recursive case
+}
+Output:
+Enter the number n: 4
+The factorial of n = 24

@@ -1,0 +1,54 @@
+// Program 10.9 to add to 2x2 matrix.
+#include<stdio.h>
+int main()
+{
+    int a[2][2],b[2][2],c[2][2];
+    printf("Enter the first 2x2 matrix: \n");
+    for(int i=0;i<2;i++)
+    {
+        for(int j=0;j<2;j++)
+        {
+            printf("Enter the %d%d value: ",i,j);
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("\nThe second 2x2 matrix: \n");
+    for(int u=0;u<2;u++)
+    {
+        for(int v=0;v<2;v++)
+        {
+            printf("Enter the %d%d value: ",u,v);
+            scanf("%d",&b[u][v]);
+        }
+    }
+    printf("\nAddition of these two matrix is: \n");
+    for(int n=0;n<2;n++)
+    {
+        for(int m=0;m<2;m++)
+        {
+            c[n][m]=a[n][m]+b[n][m];
+            printf("%d\t",c[n][m]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+Output:
+
+Enter the first 2x2 matrix: 
+Enter the 00 value: 1
+Enter the 01 value: 2
+Enter the 10 value: 3
+Enter the 11 value: 4
+
+The second 2x2 matrix:
+Enter the 00 value: 4
+Enter the 01 value: 3
+Enter the 10 value: 2
+Enter the 11 value: 1
+
+Addition of these two matrix is:
+5       5
+5       5

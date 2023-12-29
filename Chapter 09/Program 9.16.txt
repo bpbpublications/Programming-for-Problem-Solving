@@ -1,0 +1,33 @@
+// Program 9.16 to find whether the given number is Armstrong or not
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int num,digits=0,rem=0,sum=0,i,n,x;
+    printf("Enter any number: ");
+    scanf("%d",&num);
+    n=num;
+    x=num;
+    while(n>0)
+    {
+        digits=digits+1;
+        n=n/10;
+    }
+    for(i=1;i<=digits;i++)
+    {
+        rem=num%10;
+        sum=sum+pow(rem,digits);
+        num=num/10;
+    }
+    if(sum==x)
+    	printf("The number is an Armstrong number");
+    else
+    	printf("The number is not an Armstrong number");
+    return 0;
+}
+
+
+Output:
+
+Enter any number: 371
+The number is an Armstrong number

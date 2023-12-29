@@ -1,0 +1,12 @@
+// Program 19.4 creates a file 'abc.c' and enters the text into a file using fprintf()
+#include <stdio.h>
+main()
+{
+   FILE *fp;
+   fp = fopen("abc.c", "w+");
+   fprintf(fp,"HELLO");
+   fclose(fp);
+}
+
+Output:
+The program creates a file abc.c and prints HELLO in it 

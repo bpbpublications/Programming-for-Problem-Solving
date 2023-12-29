@@ -1,0 +1,13 @@
+// Program 17.9 prints character using  putch(),putchar(), fputchar().
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+putch('A');
+putchar('B');
+fputchar('C');
+}
+
+Output:
+The characters are:
+ABC

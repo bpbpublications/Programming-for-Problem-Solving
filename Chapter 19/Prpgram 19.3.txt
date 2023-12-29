@@ -1,0 +1,37 @@
+// Program 19.3 counts the number of characters, white spaces, tabs, and new lines or numbers of lines
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    FILE *fp;
+    char c;
+    int characterCount=0,spaceCount=0,lineCount=0,tabCount=0;
+
+    fp=fopen("source.c", "r");
+    if(fp==NULL)
+        {
+        printf("Cannot open file");
+        exit(0);
+        }
+
+    while((c=fgetc(fp))!=EOF)
+        {
+        characterCount++;
+        if (c == ' ')
+            spaceCount++;
+        if (c == '\n')
+            lineCount++;
+        if (c == '\t')
+            tabCount++;
+        }
+
+    fclose(fp);
+}
+
+Output:
+The number of Characters:6
+The number of Blank Spaces:0
+The number of Lines:1
+The number of Tabs:0
+

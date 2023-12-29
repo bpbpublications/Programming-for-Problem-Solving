@@ -1,0 +1,22 @@
+// Program 9.17 to sum the series 1/1 + 2/2^2 + 3/3^2 ......... n/n^2
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int n;
+    float a,i,sum=0.0;
+    printf("Enter the value of n : ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        a=pow(i,i);
+        sum=sum + a/i;
+    }
+    printf("The sum of series is = %f",sum);
+    return 0;
+}
+
+Output:
+
+Enter the value of n : 6
+The sum of series is = 8477.000000 

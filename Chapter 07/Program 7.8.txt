@@ -1,0 +1,11 @@
+// Program 7.8 to illustrate bitwise XOR(exclusive OR) operator
+#include <stdio.h>
+void main()
+{
+    int a=10,b=20;
+    printf("The value of a ^ b = %d\n",a^b);
+}
+
+Output:
+
+The value of a ^ b = 30

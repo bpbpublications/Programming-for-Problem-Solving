@@ -1,0 +1,23 @@
+// Program 11.20  copies one string to another in c without using inbuilt function
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char A[100], B[100];
+    int i = 0;
+    printf("Enter a string: ");
+    gets(A);
+    while (A[i] != '\0') 
+    {
+        B[i] = A[i];
+        i++;
+    }
+    B[i] = '\0';
+    printf("Source string: %s\n", A);
+    printf("Destination string: %s\n", B);
+    return 0;
+}
+
+Output:
+Enter a string: Hello World!
+Source string: Hello World!
+Destination string: Hello World!

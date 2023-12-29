@@ -1,0 +1,11 @@
+// Program 16.6 prints the integer value of the NULL pointer using a generic pointer
+#include <stdio.h>
+int main() 
+{
+    int *ptr = NULL;
+    printf("Pointer value: %d\n", (void *)ptr);
+    return 0;
+}
+
+Output:
+Pointer value:0

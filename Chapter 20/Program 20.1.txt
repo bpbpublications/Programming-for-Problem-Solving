@@ -1,0 +1,19 @@
+// Program 20.1 calculates the sum of two numbers using loop
+#include<stdio.h>
+void main()
+{
+ double sum, n,i;
+ printf("Enter the value of n:");
+ scanf("%lf",&n);
+ sum=0;
+ for(i=0;i<n;i++)
+  {
+    sum=sum+i;
+  }
+printf("The sum is:%lf",sum);
+}
+
+Output:
+Enter the value of n:10000000000
+The sum is:49999999990067864000.000000
+

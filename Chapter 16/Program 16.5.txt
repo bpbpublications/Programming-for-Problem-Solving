@@ -1,0 +1,16 @@
+//Program 16.5 shows the use of the generic pointer
+#include <stdio.h>
+void main()
+{
+    int a = 10;
+    float b = 20.5;
+    void *p; // Generic pointer
+    p = &a;
+    printf("The value of a using generic pointer=%d\n",*(int *)p);
+    p = &b;
+    printf("The value of a using generic pointer=%f",*(float *)p);
+}
+
+Output:
+The value of a using generic pointer=10
+The value of a using generic pointer=20.500000

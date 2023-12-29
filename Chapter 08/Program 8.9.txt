@@ -1,0 +1,19 @@
+//program 8.9 shows the continue statement for loop
+#include<stdio.h>
+void main()
+{
+    int i=1;
+    for(i=1;i<=5;i++)
+    {
+        if(i==3)
+        continue;
+        printf("%d \n",i);
+    }
+}
+
+Output:
+
+1
+2
+4
+5

@@ -1,0 +1,23 @@
+// Program 11.14 compares the first two characters of two strings
+Example:
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+char A[10];
+char B[10];
+int i;
+printf("Enter the 1st string:\n");
+gets(A);
+printf("Enter the 2nd string:\n");
+gets(B);
+i=strncmp(A,B, 2); // compare first 2 characters of A and B
+printf("The difference is %d :",i);
+}
+
+Output:
+Enter the 1st string:
+HAY
+Enter the 2nd string:
+HAPPY
+The difference is: 0

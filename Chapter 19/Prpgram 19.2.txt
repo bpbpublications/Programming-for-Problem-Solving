@@ -1,0 +1,36 @@
+// Program 19.2 copies the content of one file into another
+#include <stdio.h>
+#include <stdlib.h>		//for exit(0) function
+void main()
+{
+    FILE *fp1,*fp2;
+    char c;
+    // Open one file for reading
+    fp1=fopen("source.c","r");
+    if(fp1==NULL)
+    {
+        printf("Cannot open file");
+        exit(0);
+    }
+
+    fp2=fopen("target.c", "w"); // creates if not exists
+    if(fp2==NULL)
+    {
+        printf("Cannot open file");
+        exit(0);
+    }
+
+    // Read contents from file
+        while (1)
+    {
+        c = fgetc(fp1); // read one character from source file
+        if(c==EOF)      // check end of the file
+            break;
+        else
+            fputc(c,fp2);// write one character at destination file
+    }
+    fclose(fp1);
+    fclose(fp2);
+  }
+Output:
+The content of the file sum.c is copied into the target.c by creating it

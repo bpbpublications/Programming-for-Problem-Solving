@@ -1,0 +1,41 @@
+// Program 8.19 to find roots of the quadratic equation
+#include<stdio.h>
+#include<math.h>
+int main(){
+float a,b,c;
+float D,deno;
+float root1,root2;
+printf("Enter the vaule of a,b,c :");
+scanf("%f%f%f",&a,&b,&c);
+printf("The quadratic eq. is: %fx^2 + %fx + %fc = 0",a,b,c);
+D=(b*b) - (4*a*c);
+deno = 2*a;
+if(D>0)
+{
+printf("\nREAL ROOTS");
+root1= ((-b + sqrt(D))/deno);
+root2= ((-b - sqrt(D))/deno);
+printf("\nROOT1 = %f  \t ROOT2 = %f",root1,root2);
+}
+else if(D==0)
+{
+printf("\nEQUAL ROOTS");
+root1= -b/deno;
+printf("\nROOT1 = %f \t ROOT2 = %f",root1,root1);
+}
+else
+{
+printf("\nIMAGINARY ROOTS");
+}
+return 0;
+}
+
+
+Output:
+
+Enter the vaule of a,b,c :1
+2
+1
+The quadratic eq. is: 1.000000x^2 + 2.000000x + 1.000000c = 0
+EQUAL ROOTS
+ROOT1 = -1.000000        ROOT2 = -1.000000

@@ -1,0 +1,43 @@
+//  Program 16.3 elaborates on different operations on pointers
+#include <stdio.h>
+void main()
+{
+    int a,b,c = 0;
+    int *p , *p1, *p2 ;
+    a = 10;
+    b = 20;
+    c = 30;
+    p = &a;
+    p1 = &b;
+    p2 = &c;
+   printf("Accessing value of  a using pointer=%d\n",*p);
+   printf("Address of a=%d\n",&a);
+   printf("Address at p=%d\n",p);
+   printf("Address of pointer p = %d\n",&p);
+   printf("Increment in pointer = %d\n",++p);
+   printf("Decrement in pointer = %d\n",--p);
+   printf("Adding integers in pointer=%d\n",p1+5);
+   printf("Adding integers in pointer=%d\n",p1-10);
+   printf("Subtracting operation on pointers=%d\n",p2-p1);
+// printf("Multiplying is invalid=%d\n",p2*p1);
+// printf("Dividing is invalid=%d\n",p2/p1);
+// printf("Adding is invalid=%d\n",p1+p2);
+    if (p2>p1)
+        printf("a is greater than b");
+    else
+        printf("a is lesser than b");
+}
+
+Output:
+Accessing the value of  a using pointer = 10
+Address of a = 6422028
+Address at p = 6422028
+Address of pointer p = 6422008
+Increment in pointer = 6422032
+Decrement in pointer = 6422028
+Adding integers in pointer = 6422044
+Adding integers in pointer = 6421984
+Subtracting operation on pointers = = -1
+a is lesser than b
+
+50

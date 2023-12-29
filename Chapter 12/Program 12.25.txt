@@ -1,0 +1,32 @@
+// Program 12.25 converts decimal into binary using functions.
+#include<stdio.h>
+#include<math.h>
+int deci_to_bin(int deci);
+
+int main()
+{
+    int deci,b;
+    printf("Enter any decimal number: ");
+    scanf("%d",&deci);
+    b=deci_to_bin(deci);
+    printf("Entered number in binary form is %d",b);
+}
+
+int deci_to_bin(int deci)
+{
+    int i=0,binary=0,remainder=0;
+
+    while(deci!=0)
+    {
+        remainder=deci%2;
+        binary=binary+(remainder*pow(10,i));
+        deci=deci/2;
+        i++;
+    }
+    return binary;
+}
+
+Output:
+
+Enter any decimal number: 7
+Entered number in binary form is 111

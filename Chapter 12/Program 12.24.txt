@@ -1,0 +1,30 @@
+// Program 12.24 converts binary to decimal using function.
+#include<stdio.h>
+#include<math.h>
+int binary_to_deci(int binary);
+int main()
+{
+    int binary,c;
+    printf("Enter any binary number: ");
+    scanf("%d",&binary);
+    c=binary_to_deci(binary);
+    printf("The decimal equivalent is %d",c);
+}
+int binary_to_deci(int binary)
+{
+    int i=0,decimal=0,a=0,b=0;
+    while(binary!=0)
+    {
+        a=binary%10;
+        b=pow(2,i);
+        decimal=decimal+(a*b);
+        binary=binary/10;
+        i++;
+    }
+    return decimal;
+}
+
+Output:
+
+Enter any binary number: 10101
+The decimal equivalent is 21

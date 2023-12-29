@@ -1,0 +1,23 @@
+// Program 11.15 demonstrate 2D string
+#include <stdio.h>
+int main() {
+   char names[4][10] = {
+                        "JOHN",
+                        "SAM",
+                        "KAMAL",
+                        "DEEP"
+                        };
+
+   for(int i = 0; i < 4; i++)
+    {
+      printf("Name %d: %s\n", i+1, names[i]);
+    }
+
+   return 0;
+}
+
+Output:
+Name 1: JOHN
+Name 2: SAM
+Name 3: KAMAL
+Name 4: DEEP

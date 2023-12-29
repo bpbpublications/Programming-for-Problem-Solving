@@ -1,0 +1,15 @@
+// Program 14.9 shows the concept of padding in structure
+int main()
+{
+    struct A
+    {
+        double z;  	 	// sizeof(double) = 8
+        int x;      	// sizeof(int) = 4
+        short int y;	// sizeof(short int) = 2
+    };
+    printf("Size of struct: %ld", sizeof(struct A));
+    return 0;
+}
+Output:
+
+Size of struct: 16

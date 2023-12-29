@@ -1,0 +1,23 @@
+// Program 9.18 to sum the series 1/1 + 1/2 + ....... + 1/n
+#include<stdio.h>
+int main()
+{
+    int n;
+    float total=0.0,c,i;
+    printf("Enter the value of n: ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        c=1/i;
+        total=total+c;
+    }
+    printf("The sum of series is: %f",total);
+    return 0;
+}
+
+
+Output:
+
+Enter the value of n: 10
+The sum of series is: 2.928968
+

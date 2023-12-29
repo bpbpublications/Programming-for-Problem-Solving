@@ -1,0 +1,26 @@
+// Program 12.16 adds two number using function
+#include<stdio.h>
+#include<conio.h>
+int sum(int a,int b);
+int main()
+{
+    int num1,num2,total=0;
+    printf("Enter the numbers to be added: ");
+    scanf("%d%d",&num1,&num2);
+    total=sum(num1,num2);
+    printf("Total = %d",total);
+    return 0;
+}
+int sum(int a,int b)
+{
+    int result;
+    result = (a+b);
+    return result;
+}
+
+Output:
+
+Enter the numbers to be added: 45
+55
+Total = 100
+

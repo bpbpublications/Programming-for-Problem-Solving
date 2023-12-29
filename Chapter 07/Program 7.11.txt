@@ -1,0 +1,13 @@
+// Program 7.11 to illustrate using comma operator
+#include <stdio.h>
+void main()
+{
+    int a = 10,b = 20,x = 0;		//as an separator
+    x =(a++, b = a + b);		//as  an operator
+    printf("The value of x=%d",x);
+}
+
+Output:
+
+The value of x=31
+

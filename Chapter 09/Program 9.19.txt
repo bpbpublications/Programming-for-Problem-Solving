@@ -1,0 +1,25 @@
+// Program 9.19 for printing AP series
+#include<stdio.h>
+int main()
+{
+    int a,n,d,i,x;
+    printf("Enter the first term of the series: ");
+    scanf("%d",&a);
+    printf("Enter the common difference of the series: ");
+    scanf("%d",&d);
+    printf("Enter the number of terms to be taken out: ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+    	printf("%d\t",a);
+   	x=(d);
+    	a=(a+x);
+    }
+}
+
+Output:
+
+Enter the first term of the series: 1
+Enter the common difference of the series: 7
+Enter the number of terms to be taken out: 10
+1       8       15      22      29      36      43      50      57      64

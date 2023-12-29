@@ -1,0 +1,17 @@
+// Program 16.4 shows the pointer to the pointer
+int main() 
+{
+   int a = 10;
+   int *P1 = &a;     // Pointer to an integer
+   int **P2 = &P1;   // Pointer to a pointer to an integer
+
+   printf("Value of num: %d\n", a);
+   printf("Value of *P1: %d\n", *P1);
+   printf("Value of **P2: %d\n", **P2);
+   return 0;
+}
+
+Output:
+Value of Num: 10
+Value of *P1: 10
+Value of **P2: 10

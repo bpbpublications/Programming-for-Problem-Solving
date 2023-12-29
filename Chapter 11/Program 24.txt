@@ -1,0 +1,21 @@
+// Program 11.24 converts an uppercase string into lowercase
+#include <stdio.h>
+#include <ctype.h>
+int main()
+{
+    char input_string[100], output_string[100];
+    int i;
+    printf("Enter a string: ");
+    scanf("%s", input_string);
+    for (i = 0; input_string[i] != '\0'; i++)
+    {
+        output_string[i] = tolower(input_string[i]);
+    }
+    output_string[i] = '\0';
+    printf("The string in lowercase is: %s\n", output_string);
+    return 0;
+}
+
+Output:
+Enter a string: HELLO
+The string in lowercase is: hello

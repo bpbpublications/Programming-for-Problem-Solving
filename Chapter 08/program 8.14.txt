@@ -1,0 +1,22 @@
+// Program 8.14 to check largest of three numbers
+#include<stdio.h>
+int main()
+{
+int a,b,c;
+printf("Enter three numbers:");
+scanf("%d %d %d",&a,&b,&c);
+if(a>b && a>c)
+printf(" a is greatest: %d",a);
+else if(b>a && b>c)
+printf("b is greatest: %d",b);
+else
+printf("c is greatest: %d",c);
+return 0;
+}
+
+Output:
+
+Enter three numbers:45
+85
+55
+b is greatest: 85

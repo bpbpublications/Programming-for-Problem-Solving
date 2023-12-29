@@ -1,0 +1,21 @@
+// Program 12.7 swaps of two numbers using call by reference
+#include<stdio.h>
+void swap(int*, int*);
+void main()
+{
+    int a = 10, b = 20;
+    swap(&a, &b); // Addresses are being passed
+    printf("The values of a and b in the main are: %d %d\n", a, b);
+}
+void swap(int *x, int *y)
+{
+    int t;
+     t = *x;
+    *x = *y;
+    *y = t;
+    printf("Values after swapping:%d %d\n",*x,*y);
+}
+Output:
+Values after swapping:20 10
+The values of a and b in the main are: 20 10
+

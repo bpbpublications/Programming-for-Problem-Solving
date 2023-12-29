@@ -1,0 +1,28 @@
+// Program 7.12 to illustrate sizeof() operator
+#include <stdio.h>
+void main()
+{
+    int a;
+    float b;
+    double c;
+    char d;
+    printf("char=%d B\n",sizeof(d));
+    printf("char=%d B\n",sizeof(char));
+    printf("int=%d B\n",sizeof(a));
+    printf("int=%d B\n",sizeof(int));
+    printf("float=%d B\n",sizeof(b));
+    printf("float=%d B\n",sizeof(float));
+    printf("double=%d B\n",sizeof(c));
+    printf("double=%d B\n",sizeof(double));
+}
+
+Output:
+
+char=1 B
+char=1 B
+int=4 B
+int=4 B
+float=4 B
+float=4 B
+double=8 B
+double=8 B

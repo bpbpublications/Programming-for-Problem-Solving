@@ -1,0 +1,43 @@
+// Program 7.13 to illustrate assignment operators
+#include <stdio.h>
+void main()
+{
+    int a=5, b = 10, c=15, d=20;
+    a = d;      // Assignment
+    printf("a = %d\n", a);
+    b += c;     // Add and assignment
+    printf("b = %d\n", b);
+    b -= c;     // Subtract and assignment
+    printf("b = %d\n", b);
+    b /= c;     // Divide and assignment
+    printf("b = %d\n", b);
+    b *= c;     // Multiply and assignment
+    printf("b = %d\n", b);
+    b %= c;     // Mode and assignment
+    printf("b = %d\n", b);
+    a <<= 2;    //a = a << 2;
+    printf("a = %d\n", a);
+    a >>= 2;     //a = a >> 2;
+    printf("a = %d\n", a);
+    a &= 2;       //a = a & 2;
+    printf("a = %d\n", a);
+    a ^= 2;      //a = a ^ 2;
+    printf("a = %d\n", a);
+    a|= 2;      //a = a | 2
+    printf("a = %d\n", a);
+}
+
+Output:
+
+a = 20
+b = 25
+b = 10
+b = 0
+b = 0
+b = 0
+a = 80
+a = 20
+a = 0
+a = 2
+a = 2
+

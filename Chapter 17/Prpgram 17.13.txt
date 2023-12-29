@@ -1,0 +1,19 @@
+// Program 17.13 to print an integer and a character using fflush(stdin)
+#include<stdio.h>
+void main()
+{
+char A;
+int B;
+printf("Enter a integer\n");
+scanf("%d",&B);
+fflush(stdin);
+printf("Enter a character:\n");
+scanf("%c",&A);
+printf("The values are:%d,%c",B,A);
+}
+Output:
+Enter a integer
+10
+Enter a character:
+A
+The values are:10,A

@@ -1,0 +1,27 @@
+// Program 16.7 prints an array using a pointer
+#include <stdio.h>
+void main()
+{
+    int a[] = {10,20 ,30, 40, 50};
+    int *p;
+    p = &a;
+    int i;
+    for(i = 0; i < 5; i++)
+    {
+        printf("The element on a[%d] is = %d\n",i, *p);
+        printf("The address of a[%d] element is = %d\n",i, p);
+        p++;
+    }
+}
+
+Output:
+The element on a[0] is = 10
+The address of a[0] element is = 6422016
+The element on a[1] is = 20
+The address of a[1] element is = 6422020
+The element on a[2] is = 30
+The address of a[2] element is = 6422024
+The element on a[3] is = 40
+The address of a[3] element is = 6422028
+The element on a[4] is = 50
+The address of a[4] element is = 6422032

@@ -1,0 +1,10 @@
+// Program 11.1 Elaborates the first method of declaration and initialization of string
+#include<stdio.h>
+void main()
+{
+char A[]={'K', 'A', 'M', 'A', 'L', '\0'};
+printf("%s",A);
+}
+
+Output:
+HELLO

@@ -1,0 +1,14 @@
+// Program 7.10 for bitwise left shift
+#include <stdio.h>
+void main()
+{
+    int A=10, B=20;
+    printf("The value of A after the left shift by 2 = %d\n",A<<2);
+    printf("The value of B after the right shift by 2 = %d\n",B>>2);
+}
+
+Output:
+
+The value of A after the left shift by 2 = 40
+The value of B after the right shift by 2 = 5
+

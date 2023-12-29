@@ -1,0 +1,17 @@
+// Program 11.5 shows the working of strlen function
+#include<stdio.h> 
+#include<string.h> 
+void main()
+{
+char A[10];
+int i;
+printf("Enter the string:\n");
+gets(A);
+i=strlen(A);
+printf("The length of the string is:%d", i);
+}
+
+Output:
+Enter the string:
+Kamaldeep
+The length of the string is:9   

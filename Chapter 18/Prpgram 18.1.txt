@@ -1,0 +1,15 @@
+//Program 18.1 finds the area of a circle using macro
+#include<stdio.h>
+#define PI 3.141592
+void main()
+{
+float area, r;
+printf("Enter the value of radius:");
+scanf("%f",&r);
+area=PI*r*r;
+printf("The area of a circle is:%f",area);
+}
+
+Output:
+Enter the value of radius: 3
+The area of a circle is: 28.274328

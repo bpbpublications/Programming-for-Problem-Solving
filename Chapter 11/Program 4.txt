@@ -1,0 +1,16 @@
+// Program 11.4 Elaborates using gets and puts functions 
+#include<stdio.h>
+void main()
+{
+char A[5];
+printf("Enter the string:\n");
+gets(A);
+printf("The string is:\n");
+puts(A);
+}
+
+Output:
+Enter the string:
+Hello Friends
+The string is:
+Hello Friends

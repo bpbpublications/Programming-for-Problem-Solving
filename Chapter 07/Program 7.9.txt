@@ -1,0 +1,13 @@
+// Program 7.9 for bitwise NOT operator
+#include <stdio.h>
+void main()
+{
+    int a=10,b=20;
+    printf("The value of ~a = %d\n",~a);
+    printf("The value of ~b = %d\n",~b);
+}
+
+Output:
+
+The value of ~a = -11
+The value of ~b = -21

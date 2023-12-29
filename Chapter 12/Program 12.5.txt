@@ -1,0 +1,21 @@
+// Program 12.5 swaps two numbers using call by value.
+#include<stdio.h>
+void swap(int x, int y);
+void main()
+{
+    int a = 10, b = 20;
+    swap(a,b); 		// Actual parameters
+    printf("The values in main function are a = %d b = %d\n",a,b);
+    }
+void swap(int x, int y) //copies of a and b in x and y 
+{
+    int t;
+    t = x;
+    x = y;
+    y = t;
+    printf ("The values after swapping x = %d y = %d\n", x, y);
+}
+
+Output:
+The values after swapping  x = 20 y = 10
+The values in the main function are a = 10 b = 20

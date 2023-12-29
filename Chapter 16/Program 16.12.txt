@@ -1,0 +1,45 @@
+// Program 16.12  to input n numbersin the link list and print the same
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Node 
+{
+    int data;
+    struct Node* next;
+};
+
+int main() 
+{
+    struct Node* head = NULL;
+    int n, value;
+
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter the elements:\n");
+    for (int i = 0; i < n; i++) 
+    {
+        scanf("%d", &value);
+
+        struct Node* newNode = malloc(sizeof(struct Node));
+        newNode->data = value;
+        newNode->next = head;
+        head = newNode;
+    }
+
+    printf("Linked List: ");
+    while (head != NULL) 
+    {
+        printf("%d ", head->data);
+        head = head->next;
+    }
+    printf("\n");
+
+    return 0;
+}
+
+Output:
+Enter the number of elements: 5
+Enter the elements:
+1 2 3 4 5
+Linked List: 5 4 3 2 1

@@ -1,0 +1,16 @@
+// Program 11.3 shows the limitation of scanf function
+#include<stdio.h>
+void main()
+{
+char A[20];
+printf("Enter the string:\n");
+scanf("%s",A);
+printf("The string is:\n");
+printf("%s",A);
+}
+
+Output:
+Enter the string:
+Hello friends
+The string is:
+Hello

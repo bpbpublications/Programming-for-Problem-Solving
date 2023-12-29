@@ -1,0 +1,19 @@
+// Program 16.8 enters ten elements in an array and prints them using an array of pointers.
+#include <stdio.h>
+void main()
+{
+    int Num[10]; 	// integer array declaration
+    int *ptr[10]; 	// integer array of pointer declaration
+    printf("Enter ten numbers:");
+    for(int i=0;i<10;i++)
+        scanf("%d", &Num[i]);
+    for(int i=0;i<10;i++)
+        ptr[i]=&Num[i]; //initialization of array of pointer
+    printf("The values are:" );
+    for(int i=0;i<10;i++)
+        printf("%d ", *ptr[i]);  // printing the values of Num array
+}
+
+Output: 
+Enter ten numbers:1 2 3 4 5 6 7 8 9 10
+The values are: 1 2 3 4 5 6 7 8 9 10

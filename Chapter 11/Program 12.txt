@@ -1,0 +1,24 @@
+// Program 11.12 concatenates three characters of one string to another
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+char A[20];
+char B[10];
+int i;
+printf("Enter the 1st string:\n");
+gets(A);
+printf("Enter the 2nd string:\n");
+gets(B);
+strncat(A,B,3);//Concatenate 3 characters of B at the end of in A
+printf("The concatenated string is :\n");
+puts(A);
+}
+
+Output: 
+Enter the 1st string:
+Hello
+Enter the 2nd string:
+Friends!
+The concatenated string is:
+HelloFri

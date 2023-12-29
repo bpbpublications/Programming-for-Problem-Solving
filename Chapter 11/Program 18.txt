@@ -1,0 +1,18 @@
+// Program 11.18 Illustrates of tolower and toupper functions
+#include <stdio.h>
+#include <ctype.h>
+int main()
+{
+    char a,b,c;
+    a = 'K';
+    b = 'k';
+    c = '+';
+    printf("tolower(%c) = %c\n", a, tolower(a));
+    printf("toupper(%c) = %c\n", b, toupper(b));
+    printf("tolower(%c) = %c\n", c, tolower(c));
+}
+
+Output:
+tolower(K) = k
+toupper(k) = K
+tolower(+) = +

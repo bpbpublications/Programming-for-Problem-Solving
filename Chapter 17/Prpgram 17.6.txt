@@ -1,0 +1,17 @@
+// Program 17. 6 enters and prints a character using getche() and putch()
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+char ch;
+printf("Enter a character:\n");
+ch=getche();
+printf("\nThe character is:\n");
+putch(ch);
+}
+
+Output:
+Enter a character:
+A
+The character is:
+A

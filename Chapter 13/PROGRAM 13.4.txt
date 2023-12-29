@@ -1,0 +1,25 @@
+// Program 13.4 shows the Ackermann function implementation
+#include <stdio.h>
+int ack(int m, int n)
+{
+    if (m == 0)
+        return n+1;
+    else if((m > 0) && (n == 0))
+        return ack(m-1, 1);
+    else if((m > 0) && (n > 0))
+        return ack(m-1, ack(m, n-1));
+   	
+}
+void main()
+{
+    int A,m,n;
+    printf("Enter the value of m and n:\n");
+    scanf("%d%d",&m,&n);
+    A = ack(m,n);
+    printf("The value of Ackermann Function is:%d", A);
+}
+Output:
+Enter the value of m and n:
+1
+1
+The value of the Ackermann Function is: 3

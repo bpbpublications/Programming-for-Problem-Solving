@@ -1,0 +1,24 @@
+//Program 13.1 exhibits the recursion process
+#include <stdio.h>
+int display (int);
+void main()
+{
+    int n,a;
+    printf("Enter the number n:");
+    scanf("%d",&n);
+    display(n);
+}
+int display(int n)
+{
+    if(n == 0) // terminating condition
+        return 0; 
+    else
+    {
+        printf("%d ",n);
+        return display(n-1); // recursive call
+    }
+}
+
+Output:
+Enter the number n: 10
+10 9 8 7 6 5 4 3 2 1

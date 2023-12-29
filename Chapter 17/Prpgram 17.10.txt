@@ -1,0 +1,17 @@
+//Program 17.10 accepts and prints string using gets () and puts ()
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+char A[10];
+printf("Enter a string:\n");
+gets(A);
+printf("The string is:\n");
+puts(A);
+}
+
+Output:
+Enter a string:
+kamal deep
+The string is:
+kamal deep

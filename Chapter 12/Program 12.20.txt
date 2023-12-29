@@ -1,0 +1,29 @@
+// Program 12.20 sums the digits of a given number.
+#include<stdio.h>
+int sum(int num);
+
+int main()
+{
+    int num,b;
+    printf("Enter any number: ");
+    scanf("%d",&num);
+    b=sum(num);
+    printf("Sum of digits of the number is %d",b);
+}
+
+int sum(int num)
+{
+    int a,sum=0;
+    while(num!=0)
+    {
+        a=num%10;
+        sum=sum+a;
+        num=num/10;
+    }
+    return sum;
+}
+
+Output:
+
+Enter any number: 521
+Sum of digits of the number is 8

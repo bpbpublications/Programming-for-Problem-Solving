@@ -1,0 +1,17 @@
+// Program 12.6 prints a variable and its address using pointer
+#include <stdio.h>
+void main()
+{
+   int a=10;
+   int *p;
+   p = &a;
+   printf("value at a = %d\n", *p); // Pointer p accessing the value of a
+   printf("Address of a = %d\n", &a);
+   printf("Value of a = %d\n", a);
+}
+
+Output:
+value at a = 10
+Address of a = 6422036
+Value of a = 10
+

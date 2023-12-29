@@ -1,0 +1,37 @@
+// Program 14.1 illustrates the initialization of structure variable by method 1
+#include <stdio.h>
+#include <string.h>
+struct student
+ {
+   char  Name[10];
+   char  Class[10];
+   char  Section[10];
+   int   Roll;
+}S1={"KAMAL","B.Tech","Mechanical",1},
+S2={"Ajay","B.Tech","Mechanical",2};
+
+int main()
+{
+/* print Student 1 information */
+   printf( "Student Name : %s\n", S1.Name);
+   printf( "Student Class : %s\n", S1.Class);
+   printf( "Student Section : %s\n", S1.Section);
+   printf( "Student Roll Number : %d\n", S1.Roll);
+   
+/* print Student 2 information */
+   printf( "Student Name : %s\n", S2.Name);
+   printf( "Student Class : %s\n", S2.Class);
+   printf( "Student Section : %s\n", S2.Section);
+   printf( "Student Roll Number : %d\n", S2.Roll);
+   return 0;
+}
+
+Output:
+Student Name : KAMAL
+Student Class : B.Tech
+Student Section : Mechanical
+Student Roll Number : 1
+Student Name : Ajay
+Student Class : B.Tech
+Student Section : Mechanical
+Student Roll Number : 2

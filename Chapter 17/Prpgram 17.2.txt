@@ -1,0 +1,16 @@
+// Program 17.2  demonstrates the  printf() to print the output with the desired number of spaces
+#include<stdio.h>
+int main()
+{
+int   a=8;
+printf("%d\n", a);  // prints the value of a.
+printf("%10d\n", a);// consumes 10 spaces and right justified
+printf("%-5d", a);  // consume 5 space and left justified
+printf("%d", a);    // prints the value of a
+return 0;
+}
+
+Output:
+8
+         8
+8    8

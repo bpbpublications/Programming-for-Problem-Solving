@@ -1,0 +1,15 @@
+// Proram 14.8 Shows the number of bytes occupied by the structure in memory
+int main()
+{
+    struct A 
+{
+        int x;      	// size of int is = 4
+        double z;  	 	// size of double = 8
+        short int y;	// size of short int = 2
+    };
+    printf("Size of struct: %ld", sizeof(struct A));
+    return 0;
+}
+
+Output:
+Size of struct: 24

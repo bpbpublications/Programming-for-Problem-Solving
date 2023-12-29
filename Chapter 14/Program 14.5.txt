@@ -1,0 +1,65 @@
+//Program 14.5 uses arrow (->) operator or for dealing with structure members 
+#include <stdio.h>
+struct Student
+{
+    char name[30];
+    int age;
+    char gender[30];
+}std1,std2;
+//Define the variables of the structure with pointers
+struct Student *ptr1, *ptr2;
+
+int main()
+{
+    ptr1 = &std1;	// ptr1 holds the address of object std1
+    ptr2 = &std2;	// ptr2 holds the address of object std2
+    printf (" \n First Student: \n");
+    printf (" Enter the name of the Student: ");
+    scanf (" %s", &ptr1->name);
+    printf (" Enter the age of the Student: ");
+    scanf (" %d", &ptr1->age);
+    printf (" Enter the gender of the Student: ");
+    scanf (" %s", &ptr1->gender);
+
+
+    printf (" \n Second Student: \n");
+    printf (" Enter the name of the Student: ");
+    scanf (" %s", &ptr2->name);
+    printf (" Enter the age of the Student: ");
+    scanf (" %d", &ptr2->age);
+    printf (" Enter the gender of the Student: ");
+    scanf (" %s", &ptr2->gender);
+
+    printf ("\n Display the Details of the Student using Structure Pointer");
+    printf ("\n Details of the Student  \n");
+    printf(" Name: %s\n", ptr1->name);
+    printf(" Age: %d\n", ptr1->age);
+    printf(" Gender: %s\n", ptr1->gender);
+    printf ("\n Details of the Student  \n");
+    printf(" Name: %s\n", ptr2->name);
+    printf(" Age: %d\n", ptr2->age);
+    printf(" Gender: %s\n", ptr2->gender);
+    return 0;
+}
+
+Output:
+First Student:
+Enter the name of the Student: Kamal
+Enter the age of the Student: 30
+Enter the gender of the Student: Male
+
+ Second Student:
+ Enter the name of the Student: John
+ Enter the age of the Student: 25
+ Enter the gender of the Student: Male
+ Display the Details of the Student using Structure Pointer
+ 
+Details of the Student
+ Name: Kamal
+ Age: 30
+ Gender: Male
+
+ Details of the Student
+ Name: John
+ Age: 25
+ Gender: Male

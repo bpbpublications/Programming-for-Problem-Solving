@@ -1,0 +1,18 @@
+// Program 10.6 to enter and print the element of 3D array
+#include<stdio.h>
+int main()
+{
+    int a[2][2][2]={{
+                  {1,2},
+                  {3,4}},
+                  {
+                  {5,6},
+                  {7,8}}
+                   };
+printf("First element of layer 1= %d",a[0][0][0]);
+printf("\nFirst element of layer 2= %d",a[1][0][0]);
+return 0;
+}
+Output:
+First element of layer 1= 1
+First element of layer 2= 5

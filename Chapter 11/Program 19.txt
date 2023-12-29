@@ -1,0 +1,18 @@
+Program 11.19 finds the length of the string
+#include <stdio.h>
+int main() {
+    char str[100];
+    int length = 0;
+    printf("Enter a string: ");
+    gets(str);
+    // Counting the characters in the string
+    while (str[length] != '\0') {
+        length++;
+    }
+    printf("The length of the string is %d\n", length);
+    return 0;
+}
+
+Output:
+Enter a string: Hello World!
+The length of the string is 12

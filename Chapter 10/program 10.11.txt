@@ -1,0 +1,32 @@
+// Program 10.11 to sum the ten elements of an array.
+#include<stdio.h>
+int main()
+{
+    int a[10];
+    for(int i=0;i<10;i++)
+    {
+        printf("Enter the number at %d position : ",i);
+        scanf("%d",&a[i]);
+    }
+    int sum=0;
+    for(int j=0;j<10;j++)
+    {
+        sum=sum+a[j];
+    }
+    printf("The sum of all the inputs is: %d",sum);
+    return 0;
+}
+
+Output:
+
+Enter the number at 0 position : 10
+Enter the number at 1 position : 20
+Enter the number at 2 position : 30
+Enter the number at 3 position : 40
+Enter the number at 4 position : 50
+Enter the number at 5 position : 60
+Enter the number at 6 position : 70
+Enter the number at 7 position : 80
+Enter the number at 8 position : 90
+Enter the number at 9 position : 100
+The sum of all the inputs is: 550

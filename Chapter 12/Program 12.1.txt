@@ -1,0 +1,14 @@
+// Program 12.1 prints HELLO using the function
+#include<stdio.h>
+void print (void); 	// Function declaration or prototype
+void main()
+{
+   print( );		// Function Calling
+}
+void print()		//Function definition
+{
+    printf("HELLO");
+}
+
+Output:
+HELLO

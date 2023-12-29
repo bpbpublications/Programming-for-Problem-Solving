@@ -1,0 +1,47 @@
+//program 10.16 for largest and smallest element in the array.
+#include <stdio.h>
+int main()
+{
+  int a[100],n,i,j,temp;
+  printf("Enter number of elements:");
+  scanf("%d",&n);
+  printf("Enter %d elements:\n", n);
+  for (i=0;i<n;i++)
+    scanf("%d",&a[i]);
+  for (i=0;i<n-1;i++)
+  {
+    for (j=0;j<n-i-1;j++)
+    {
+      if (a[j] > a[j+1]) 
+      {
+        temp=a[j];
+        a[j]=a[j+1];
+        a[j+1]=temp;
+      }
+    }
+  }
+  printf("The largest element in the array is: %d",a[n-1]);
+  printf("\nThe second largest element in the array is: %d",a[n-2]);
+  printf("\nThe smallest element in the array is: %d",a[0]);
+  printf("\nThe second smallest element in the array is: %d",a[1]);
+  return 0;
+}
+
+Output:
+
+Enter number of elements: 10
+Enter 10 elements:
+20
+62
+54
+63
+85
+95
+74 
+84
+65
+55
+The largest element in the array is: 95
+The second largest element in the array is: 85
+The smallest element in the array is: 20
+The second smallest element in the array is: 54

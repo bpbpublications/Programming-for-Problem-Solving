@@ -1,0 +1,48 @@
+// Program 10.13 to find the transpose of a 2*2 matraix
+#include<stdio.h>
+int main()
+{
+    int a[2][2],t[2][2];
+    for(int i=0;i<2;i++)
+    {
+        for(int j=0;j<2;j++)
+        {
+            printf("Enter the %d%d value: ",j,i);
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("The 2x2 matrix is:");
+    for(int x=0;x<2;x++)
+    {
+        printf("\n");
+        for(int y=0;y<2;y++)
+        {
+            printf("%d\t",a[x][y]);
+        }
+    }
+    printf("\nThe transpose is:");
+    for(int x=0;x<2;x++)
+    {
+        printf("\n");
+        for(int y=0;y<2;y++)
+        {
+            t[x][y]=a[y][x];
+            printf("%d\t",t[x][y]);
+        }
+    }
+    return 0;
+}
+
+Output:
+
+Enter the 00 value: 1
+Enter the 10 value: 2
+Enter the 01 value: 3
+Enter the 11 value: 4
+The 2x2 matrix is:
+1       2
+3       4
+The transpose is:
+1       3
+2       4
+

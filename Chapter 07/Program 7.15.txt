@@ -1,0 +1,13 @@
+// Program 7.15 to print the address of a variable using address operator
+#include <stdio.h>
+void main()
+{
+    int x=10;
+    printf("The value of x=%d\n",x);
+    printf("The address of x=%d",&x);  // address value may change from one computer to other
+}
+
+Output:
+
+The value of x=10
+The address of x=6422044

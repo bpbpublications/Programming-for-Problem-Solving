@@ -1,0 +1,61 @@
+//Program 13.6 shows the working of the quick sort
+#include <stdio.h>
+void Quicksort(int A[50],int first,int last)
+{
+    int i,j,pivot,temp;
+    if(first<last)
+    {
+        pivot=first;
+        i=first;
+        j=last;
+        while(i<j)
+        {
+            while(A[i]<=A[pivot]&& i<last)
+                i++;
+            while(A[j]>A[pivot])
+                j--;
+            if(i<j)                 
+            {		//Swapping of ith and jth elements
+                temp=A[i];
+                A[i]=A[j];
+                A[j]=temp;
+            }
+        }
+        temp=A[pivot];      //Swapping of jth element and pivot
+        A[pivot]=A[j];
+        A[j]=temp;
+        Quicksort(A,0,j-1); // recursively sort left smaller sub array
+        Quicksort(A,j+1,last);    // recursively sort right smaller sub array
+    }
+}
+void main()
+{
+    int A[50];
+    int n,i;
+    printf("Enter size of an array:\n");
+    scanf("%d",&n);
+    printf("Enter Elements:\n");
+    for (i = 0; i < n; i++)
+        scanf("%d", &A[i]);
+    printf("The unsorted array is: \n");
+    for (i = 0; i < n; i++)
+        printf("%d\t", A[i]);
+    Quicksort(A,0,n-1);
+    printf("\nThe sorted array is: \n");
+    for (i = 0; i < n; i++)
+        printf("%d \t", A[i]);
+}
+Output:
+
+Enter size of an array:
+5
+Enter Elements:
+30
+50
+10
+40
+20
+The unsorted array is:
+30      50      10      40      20
+The sorted array is:
+10      20      30      40      50

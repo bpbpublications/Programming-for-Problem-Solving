@@ -1,0 +1,16 @@
+//Program 8.3 illustrates if-else statement
+#include <stdio.h>
+int main()
+{
+    int a = 10;
+    int b = 20;
+    if (a > b)
+        printf("a > b\n");
+    else
+        printf("b > a\n");
+    return 0;
+}
+
+Output:
+
+b > a

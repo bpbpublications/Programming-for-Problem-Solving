@@ -1,0 +1,16 @@
+// Program 18.3 implements the #ifdef and #endif
+#include<stdio.h>
+#define macro1
+void main()
+{
+#ifdef  macro1
+printf( "HEY!\n" );
+#endif
+
+#ifdef  macro2
+printf( "Hello!\n" );
+#endif
+}
+
+Output:
+HEY!

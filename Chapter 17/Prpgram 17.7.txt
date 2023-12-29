@@ -1,0 +1,17 @@
+// Program 17.7 enters and prints a character using getchar() and putchar()
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+char ch;
+printf("Enter a character:\n");
+ch=getchar();
+printf("The character is:\n");
+putchar(ch);
+}
+
+Output:
+Enter a character:
+A
+The character is:
+A

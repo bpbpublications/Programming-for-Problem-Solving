@@ -1,0 +1,25 @@
+// Program 9.20 for printing GP series
+#include<stdio.h>
+int main()
+{
+    int a,n,d,i,x;
+    printf("Enter the first term of the series: ");
+    scanf("%d",&a);
+    printf("Enter the common ratio of the series: ");
+    scanf("%d",&d);
+    printf("Enter the number of terms to be taken out: ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+    	printf("\t%d",a);
+    	x=(d);
+    	a=(a*d);
+    }
+}
+
+Output:
+
+Enter the first term of the series: 1
+Enter the common ratio of the series: 2
+Enter the number of terms to be taken out: 5
+ 1       2       4       8       16
